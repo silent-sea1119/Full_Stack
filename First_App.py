@@ -1,6 +1,5 @@
 ##First App
-from flask imp
-ort Flask, request, url_for, redirect
+from flask import Flask, request, url_for, redirect
 
 app=Flask(__name__)
 
@@ -11,7 +10,8 @@ def welcome():
 #Basic
 @app.route("/hello")
 def hello():
-	return "Hello!!!"
+	#return '<html><body><h1>Hello World..!!!</h1></body></html>'
+	return "Hello.......!!"
 
 #Variable
 @app.route("/hello/<name>")

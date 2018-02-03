@@ -1,0 +1,18 @@
+To run the app
+
+
+1) export the path
+    export DJANGO_SETTINGS_MODULE=quora.db.settings.local;export PYTHONPATH=$PWD;
+
+2) Create database which is specified in  django_demo/quora/db/settings/local.py
+
+3) Miggrate a tables written in django_demo/quora/db/quora/models.py
+
+    python quora/manage.py makemigrations
+
+4) Migrate tables into mysql
+
+    python quora/manage.py migrate
+
+5) Run the app
+    python quora/conf/service_app.py
